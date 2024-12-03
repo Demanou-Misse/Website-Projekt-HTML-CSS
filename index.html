@@ -1,0 +1,183 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demanou_site</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--connecter avec le CSS-->
+    <link rel="shortcut icon" href="Logo_html.png" />
+    <!--mettre un logo-->
+  </head>
+  <body>
+    <!-- l'entete du site -->
+    <header>
+      >
+      <h1>
+        <span class="col">&#9734;</span> Bienvenue sur notre site:
+        <span class="suite"> découvrez les domaine qui vous passionnent</span>
+        <span class="col">&#9734;</span>
+      </h1>
+      <hr />
+      <p>
+        <strong>
+          <em>
+            <span>&#9755;</span> Inscrivez-vous pour recevoir nos dernières
+            nouvelles.</em
+          ></strong
+        >
+      </p>
+    </header>
+    <!-- contenu principal -->
+    <div align="center">
+      <section id="citation">
+        <!--Message du jour-->
+        <h3>Message du jour</h3>
+        <blockquote class="block">
+          "La vie est un voyage, pas une destination. Apprécier chaque étape,
+          chaque défi, chaque moment de joie, car c'est dans ces instants que
+          vous découvrez votre véritable force et votre beauté intérieure. "
+        </blockquote>
+        <cite>Ralph Waldo Emerson</cite>
+      </section>
+      <div align="center">
+        <a
+          href="https://citations.ouest-france.fr/citations-proverbe-francais-6937.html "
+          target="_blank"
+          >Pour plus de proverbes</a
+        >
+      </div>
+    </div>
+    <section>
+      <h2>Liste imbriquée</h2>
+      <ul>
+        <li>
+          Fruits
+          <ul>
+            <li>Pomme</li>
+            <li>Banane</li>
+          </ul>
+        </li>
+        <li>
+          Légumes
+          <ul>
+            <li>Carotte</li>
+            <li>Brocoli</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <!--formulaire-->
+    <section>
+      <h3>Formulaire d'inscription</h3>
+      <form action="/soumettre" method="post">
+        <!-- champ de texte pour le nom -->
+        <div>
+          <label for="nom">Nom complet :</label>
+          <input
+            type="text"
+            id="nom"
+            name="nom"
+            placeholder="Entrez votre nom"
+            required
+          />
+        </div>
+        <br />
+        <!-- champ de texte pour le l'adresse e-mail -->
+        <div>
+          <label for="e-mail">Adresse e-mail :</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Entrez votre e-mail"
+            required
+          />
+        </div>
+        <br />
+        <!-- champ pour l'age -->
+        <div>
+          <label for="age">Âge :</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            min="1"
+            max="120"
+            placeholder="votre âge"
+            required
+          />
+        </div>
+        <br />
+        <!-- Menu déroulant -->
+        <div>
+          <label for="preference">préférence de contenu :</label>
+          <select id="preference" name="preference">
+            <option value="technologie">Technologie</option>
+            <option value="sante">Santé</option>
+            <option value="voyage">Voyage</option>
+            <option value="autre">Autre</option>
+          </select>
+        </div>
+        <br />
+        <!--checkbox -->
+        <!--Bouton pour envoyer-->
+        <div><input type="submit" value="S'inscrire" /></div>
+        <hr />
+      </form>
+    </section>
+    <!-- Tableau des avantages -->
+    <section>
+      <h2><span>&#9787;</span> Avantages de l'inscription</h2>
+      <hr />
+      <table border="1" width="75%">
+        <thead>
+          <tr>
+            <td>Avantages</td>
+            <td>Description</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Contenu exclusif</td>
+            <td>Accédez à des articles et des offres réservés aux membres.</td>
+          </tr>
+          <tr>
+            <td>Actualités rapides</td>
+            <td>Recevez les dernières actualités directement par e-mail.</td>
+          </tr>
+          <tr>
+            <td>Communauté</td>
+            <td>Rejoignez une communauté de passionnés.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!--Aperçu, images, videos-->
+    <h3><span>&#10163;</span> Aperçu de notre contenu visuel</h3>
+    <div align="left">
+      <img src="liberté.jpg" alt="liberté" width="200" height="200" /><span
+        >&#10170;</span
+      >
+      <img src="book.jpg" alt="book" width="200" height="200" />
+      <span>&#10170;</span><span>&#10170;</span><span>&#10170;</span>
+      <video
+        src="fleur.mp4"
+        width="200"
+        height="200"
+        autoplay
+        loop
+        muted
+      ></video
+      ><span>&#10170;</span><span>&#10170;</span><span>&#10170;</span>
+      <img src="coeur.jpg" alt="coeur" width="200" height="200" /><span
+        >&#10170;</span
+      >
+      <img src="homme.jpg" alt="homme" width="200" height="200" />
+    </div>
+    <!--Pied de la page-->
+    <footer>
+      <p>&copy; 2024 Mon Site. Tous droits réservés.</p>
+      <!--copyright-->
+    </footer>
+  </body>
+</html>

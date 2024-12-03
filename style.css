@@ -1,0 +1,32 @@
+h1{
+    color: rgb(8, 8, 8);
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase; /*texte en majuscule*/
+}
+.suite{
+    text-transform: lowercase; /*texte en minuscule*/
+    color: rgb(0, 152, 253);
+    letter-spacing: 1px; 
+}
+.col{
+    color: rgb(233, 138, 14);
+    font-weight: 900;
+}
+.block{
+    color: rgb(5, 155, 72);
+    text-align: center;
+}
+li{
+    list-style-type: square; /* liste carré*/
+}
+a{
+    text-decoration: none; /*désouligner les liens*/
+    background-color: rgba(126, 5, 126, 0.342);
+    border: rgba(126, 5, 126, 0.342);
+    border-style: solid;
+    border-color: rgb(233, 5, 233);
+    border-radius: 10px;
+    box-shadow: blueviolet;
+}
